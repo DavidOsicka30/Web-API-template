@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "David Osička",
+  "licence": "https://buymeacoffee.com/davidosicka",
+  "classifications": [ "Web API" ],
+  "name": "Web API template",
+  "description": "Creates web api template with structure",
+  "identity": "WebApiTemplate",        
+  "shortName": "webapi",       
+  "tags": {
+    "language": "C#",           
+    "type": "project"
+  },
+  "sourceName": "WebApiTemplate",      
+  "preferNameDirectory" : "true", 
+  "symbols": {
+    "RenameParam": {
+      "type": "parameter",
+      "datatype": "string",
+      "description": "Replace files name containing 'Todo' with defined value",
+      "FileRename": "Todo",
+      "defaultValue": "My"
+    },
+    "TargetFrameworkOverride": {
+      "type": "parameter",
+      "description": "Overrides the target framework",
+      "replaces": "TargetFrameworkOverride",
+      "datatype": "string",
+      "defaultValue": ""
+    }
+  }
+}
